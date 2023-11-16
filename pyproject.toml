@@ -1,0 +1,18 @@
+[plugin-info]
+SHORT_PLUGIN_NAME = 'simu_scan'
+package-url = 'https://github.com/PyMoDAQ/pymodaq_plugins_simu_scan'
+description = 'PyMoDAQ plugin for simulating a scan'
+
+author = 'Bernhard Lang'
+author-email = 'bernhard.lang@unige.ch'
+license = 'MIT'
+
+[plugin-install]
+packages-required = ['pymodaq>=4.0.0']
+
+[project]
+name = "pymodaq_plugins_simu_scan"
+version = "0.0.1"
+
+[project.entry-points."pymodaq.plugins"]
+'simu_scan' = 'pymodaq_plugins_simu_scan'

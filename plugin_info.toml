@@ -1,0 +1,11 @@
+[plugin-info]
+SHORT_PLUGIN_NAME = 'simu_scan'
+package-url = 'https://github.com/PyMoDAQ/pymodaq_plugins_baslesimu_Scan'
+description = 'PyMoDAQ plugin for simulating scans'
+
+author = 'Bernhard Lang'
+author-email = 'bernhard.lang@unige.ch'
+license = 'MIT'
+
+[plugin-install]
+packages-required = ['pymodaq>=4.0.0']#,'pypylon>=1.8.0']
