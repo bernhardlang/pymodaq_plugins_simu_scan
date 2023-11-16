@@ -128,11 +128,11 @@ class SimulateBaslerController(BaslerController):
         self._beam_width = 0.05
         self._beam_height = 0.05
         # parameters for random walk
-        self._d2 = 1
-        self._gamma = 1
-        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass)
-        self._dt = 1e-4
-        self._sdt = np.sqrt(self._dt)
+#        self._d2 = 1
+#        self._gamma = 1
+#        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass)
+#        self._dt = 1e-4
+#        self._sdt = np.sqrt(self._dt)
 
 
     def open(self, camera_no=0, exposure_time=100, gain=0.0, num_buffers=12,
@@ -227,15 +227,15 @@ class SimulateBaslerController(BaslerController):
             * np.exp(-((self.grid_y - pos_y)/self._beam_height)**2)
         return data
 
-        dWx = np.random.normal(0, sdt);
-        dWy = np.random.normal(0, sdt);
-        self._vx += \
-            - self._dt * (self._gamma * self._vx \
-                         + self._d2 * (self._x - self._mean_x)) \
-            + self._sigma * dWx
-        self._x += self._vx * self._dt;
-        self._vy += \
-            - self._dt * (self._gamma * self._vy \
-                          + self._d2 * (self._y - self._mean_y)) \
-            + self._sigma * dWy
-        self._y += self._vy * self._dt;
+#        dWx = np.random.normal(0, sdt);
+#        dWy = np.random.normal(0, sdt);
+#        self._vx += \
+#            - self._dt * (self._gamma * self._vx \
+#                         + self._d2 * (self._x - self._mean_x)) \
+#            + self._sigma * dWx
+#        self._x += self._vx * self._dt;
+#        self._vy += \
+#            - self._dt * (self._gamma * self._vy \
+#                          + self._d2 * (self._y - self._mean_y)) \
+#            + self._sigma * dWy
+#        self._y += self._vy * self._dt;
