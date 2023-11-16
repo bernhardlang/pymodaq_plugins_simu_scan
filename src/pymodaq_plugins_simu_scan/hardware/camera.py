@@ -130,7 +130,7 @@ class SimulateBaslerController(BaslerController):
         # parameters for random walk
         self._d2 = 1
         self._gamma = 1
-        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass))
+        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass)
         self._dt = 1e-4
         self._sdt = np.sqrt(self._dt)
 
