@@ -43,7 +43,7 @@ class DAQ_2DViewer_simu_scan(DAQ_Viewer_base):
     ]
 
     def ini_attributes(self):
-        self.controller: BaslerController = None
+        self.controller: SimuScanController = None
         self.x_axis = None
         self.y_axis = None
 

@@ -128,11 +128,11 @@ class SimulateBaslerController(BaslerController):
         self._beam_width = 0.05
         self._beam_height = 0.05
         # parameters for random walk
-#        self._d2 =
-#        self._gamma =
-#        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass))
-#        self._dt =
-#        self._sdt = np.sqrt(self._dt)
+        self._d2 = 1
+        self._gamma = 1
+        self._sigma = np.sqrt(2.0 * self._gamma * kB * temperature / mass))
+        self._dt = 1e-4
+        self._sdt = np.sqrt(self._dt)
 
 
     def open(self, camera_no=0, exposure_time=100, gain=0.0, num_buffers=12,
